@@ -1,0 +1,29 @@
+endi:
+  name: Endilie Yacop Sucipto
+  title: Maintainer of Docusaurus
+  url: https://github.com/endiliey
+  image_url: https://github.com/endiliey.png
+
+yangshun:
+  name: Yangshun Tay
+  title: Front End Engineer @ Facebook
+  url: https://github.com/yangshun
+  image_url: https://github.com/yangshun.png
+
+slorber:
+  name: Sébastien Lorber
+  title: Docusaurus maintainer
+  url: https://sebastienlorber.com
+  image_url: https://github.com/slorber.png
+
+jacopo:
+  name: Jacopo de Berardinis
+  title: Smashub maintainer
+  url: jonnybluesman.github.io
+  image_url: https://avatars.githubusercontent.com/u/13005049?v=4
+
+andrea:
+  name: Andrea Poltronieri
+  title: Smashub maintainer
+  url: andreapoltronieri.org
+  image_url: https://avatars.githubusercontent.com/u/44606182?v=4
