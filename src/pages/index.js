@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <Layout
       title={`Welcome to Smashub`}
-      description="Description will go into a meta tag in <head />">
+      description="The Semantic Music Hub">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
