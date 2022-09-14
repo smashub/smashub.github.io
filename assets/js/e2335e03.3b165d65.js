@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksmashub_github_io=self.webpackChunksmashub_github_io||[]).push([[778],{6099:s=>{s.exports=JSON.parse('{"label":"semantic","permalink":"/blog/tags/semantic","allTagsPath":"/blog/tags","count":1}')}}]);

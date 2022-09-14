@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksmashub_github_io=self.webpackChunksmashub_github_io||[]).push([[3638],{6150:s=>{s.exports=JSON.parse('{"label":"music","permalink":"/blog/tags/music","allTagsPath":"/blog/tags","count":1}')}}]);
