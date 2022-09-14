@@ -2,5 +2,4 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
-
+# Mission and content

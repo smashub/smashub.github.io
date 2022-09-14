@@ -8,7 +8,8 @@ const FeatureList = [
     Svg: require('@site/static/img/music_mir.svg').default,
     description: (
       <>
-        Smashub sits on the back of giants, with a modular design based on...
+        Smashub sits on the shoulders of giants, with a modular design based on
+        music standards.
       </>
     ),
   },
@@ -17,8 +18,8 @@ const FeatureList = [
     Svg: require('@site/static/img/music_net.svg').default,
     description: (
       <>
-        Standardise and describe your music data. Create music knowledge graphs
-        with little efforts.
+        Standardise and semantically describe your music data. Create musical
+        knowledge graphs.
       </>
     ),
   },
