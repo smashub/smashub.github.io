@@ -1,3 +1,6 @@
+---
+sidebar_position: 3
+---
 # Examples of JAMS files
 
 ## Audio JAMS

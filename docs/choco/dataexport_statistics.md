@@ -1,4 +1,6 @@
-
+---
+sidebar_position: 2
+---
 # Data export and statistics
 
 ## Exporting ChoCo as a JAMS dataset

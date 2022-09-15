@@ -1,4 +1,12 @@
+---
+sidebar_position: 6
+---
 # Dataset evaluation
+
+This section details the actions taken to evaluate the quality of ChoCO, both in
+terms of JAMS output (accuracy of metadata and annotation), and chord conversion
+consistency. If you want to replicate these experiments, please consider the 
+instructions below.
 
 ## JAMS-Test: a framework for test-driven evaluation
 
@@ -36,7 +44,7 @@ python jams_tests.py create ../partitions/isophonics/choco/ audio --n_samples 4 
 
 #### Step 2: Run the evaluation with JAMS-Test
 
-Once you have manually annotated/revised the silver JAMS, thereby producing gold JAMS, it is time to measure the quality of the estimated JAMS files (in ChoCo, the output of the JAMification process). This is done by comparing the latter against the gold standard, with respect to specific sections/layer (this is fairly documented [in this issue](https://github.com/jonnybluesman/choco/issues/60)). To run the evaluation, you only need to provide the path to the specific ChoCo partition to validate: which is expected to contain a `test` folder with the gold JAMS. Please, note that, if the test folder still contains the silver JAMS from the previous step, these can be safely ignored with the `--skip_silver` option.
+Once you have manually annotated/revised the silver JAMS, thereby producing gold JAMS, it is time to measure the quality of the estimated JAMS files (in ChoCo, the output of the JAMification process). This is done by comparing the latter against the gold standard, with respect to specific sections/layer (this is fairly documented in our issues). To run the evaluation, you only need to provide the path to the specific ChoCo partition to validate: which is expected to contain a `test` folder with the gold JAMS. Please, note that, if the test folder still contains the silver JAMS from the previous step, these can be safely ignored with the `--skip_silver` option.
 
 ```
 cd choco
@@ -56,7 +64,7 @@ Validation will take place on two levels:
 
 #### Validation Guidelines
 
-The annotations to be validated are assigned to validators in a csv file called [validator_map.csv](validator_map.csv).
+The annotations to be validated are assigned to validators in a csv file called `validator_map.csv`.
 This file has the following structure:
 
 | **dataset_name** | **dataset_type** | **validator**  | **perliminary_test** |
@@ -86,17 +94,16 @@ categories:
     - *key annotations*: annotations about the song's key, including temporal indications. For each key annotation,
       it is therefore essential to validate both the accuracy of the key label, its duration and its starting time.
 
-There can be two main types of annotations contained in a JAMS file:
+There are two main types of annotations contained in a JAMS file:
 
 1. Audio annotations: contain time information expressed in real time (seconds);
 2. Score annotations: contain time expressed symbolically. In particular, timing information is expressed through the
    convention `beasure.beat` while duration is expressed in `quarter_beat`.
 
 You can get more information regarding these conventions and the structure of the JAMS files in the Wiki section of the
-ChoCo repository, at [this link](https://github.com/jonnybluesman/choco/wiki/Examples-of-ChoCo-JAMS).
+ChoCo repository, at [this link](./choco_jams).
 
-In order to make validation faster and simpler, the JAMS files have been further simplified,
-as [documented here](https://github.com/jonnybluesman/choco/wiki/Evaluation-of-ChoCo), in order to reduce the number of
+In order to make validation faster and simpler, the JAMS files have been further simplified, in order to reduce the number of
 chords to be validated and consequently the complexity of the files.
 Each file was in fact simplified using one of the following strategies:
 
@@ -133,7 +140,7 @@ cd choco
 git switch validation
 ```
 
-5. check in the [validator_map](validator_map.csv) file which dataset has been associated with you
+5. check in the `validator_map.csv` file which dataset has been associated with you
 6. look for the JAMS files to validate in the `partitions/dataset_name/test` folder
 7. duplicate each file by adding your name to the file name, e.g., `isophonics_73_silver.jams` will
    become `isophonics_3_silver_yourname.jams`
